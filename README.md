@@ -2,9 +2,12 @@
 [For X-UI FARSI VERSION](README-fa.md)
 
 Another Translated-to-English Version of X-UI; with some of more advanced features implemented. 
- 
 A furthur development from [my previous repo](https://github.com/NidukaAkalanka/x-ui-english.old) and
 kind a fork from [taffychan's x-ui](https://github.com/taffychan/x-ui) + [hossinasaadi's x-ui](https://github.com/hossinasaadi/x-ui), which all are forked from [vaxilu's awesome project](https://github.com/vaxilu/x-ui/) : a Multi-protocol Multi-user Xray Panel
+
+# Fast Install
+fast install without any question:<br>
+<code>bash <(curl -Ls https://raw.githubusercontent.com/NidukaAkalanka/x-ui-english/master/fast-install.sh)</code>
 
 # Features
 
