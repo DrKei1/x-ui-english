@@ -263,8 +263,9 @@ show_login_info(){
         echo -e "Panel IPv4 login address is: ${GREEN}http://$v4:$config_port ${PLAIN}"
         echo -e "Panel IPv6 login address is: ${GREEN}http://[$v6]:$config_port ${PLAIN}"
     fi
-    echo -e "Username: ${GREEN}$config_account ${PLAIN}"
-    echo -e "Password: ${GREEN}$config_password ${PLAIN}"
+    echo -e "Username: ${RED}$config_account ${PLAIN}"
+    echo -e "Password: ${RED}$config_password ${PLAIN}"
+    echo -e "Port: ${RED}$config_port ${PLAIN}"
 }
 
 install_xui $1
