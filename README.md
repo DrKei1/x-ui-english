@@ -7,7 +7,7 @@ kind a fork from [taffychan's x-ui](https://github.com/taffychan/x-ui) + [hossin
 
 # Fast Install
 fast install without any question:<br>
-<code>bash <(curl -Ls https://raw.githubusercontent.com/NidukaAkalanka/x-ui-english/master/fast-install.sh)</code>
+<code>bash <(curl -Ls https://raw.githubusercontent.com/DrKei1/x-ui-english/master/fast-install.sh)</code>
 
 # Features
 
