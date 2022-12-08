@@ -1,9 +1,9 @@
 # X-UI ENGLISH & Persian
 a Version of X-UI with some of more features.
 
-# Fast Install
+# Fast Install 🚀
 fast install without any question:<br>
-<code>bash <(curl -Ls https://raw.githubusercontent.com/DrKei1/x-ui-english/master/fast-install.sh)</code><br>
+<code>bash <(curl -Ls https://raw.githubusercontent.com/DrKei1/x-ui-english/master/fast-install.sh)</code><br><br>
 
 # Discription
 A furthur development from [my previous repo](https://github.com/NidukaAkalanka/x-ui-english.old) and
