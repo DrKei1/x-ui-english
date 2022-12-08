@@ -152,11 +152,11 @@ download_xui(){
 
 panel_config() {
     yellow "For security reasons, after the installation/ update, you need to remember the port and the account password"
-    read -rp "Please set the login user name [default is a random user name]: " config_account
+    config_account="admin"
     [[ -z $config_account ]] && config_account=$(date +%s%N | md5sum | cut -c 1-8)
-    read -rp "Please set the login password. Don't include spaces [default is a random password]: " config_password
+    config_password="admin1234"
     [[ -z $config_password ]] && config_password=$(date +%s%N | md5sum | cut -c 1-8)
-    read -rp "Please set the panel access port [default is a random port]: " config_port
+    config_port="54321"
     [[ -z $config_port ]] && config_port=$(shuf -i 1000-65535 -n 1)
     until [[ -z $(ss -ntlp | awk '{print $4}' | grep -w "$config_port") ]]; do
         if [[ -n $(ss -ntlp | awk '{print $4}' | grep -w  "$config_port") ]]; then
@@ -174,7 +174,7 @@ install_xui() {
     
     if [[ -e /usr/local/x-ui/ ]]; then
         yellow "The X-UI panel has been installed at present. Please confirm you want to update it. There would not be any data loss."
-        yn="n"
+        yn="y"
         if [[ $yn =~ "Y"|"y" ]]; then
             cd
             mv /etc/x-ui/x-ui.db /etc/x-ui-english.db.bak # Backing up Chinese X-UI db (if any)
